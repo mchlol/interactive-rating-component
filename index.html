@@ -9,52 +9,85 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Plus+Jakarta+Sans&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <div class="page-container">
+    <main class="content-wrap">
 
-  <!-- Rating state start -->
+      <div class="component container">
 
-  How did we do?
+        <div id="rating-state">
+          <!-- Rating state start -->
+          <div class="component--section">
+            <div class="icon-wrap circle flex-center">
+              <img src="./images/icon-star.svg" alt="orange star">
+            </div>
+          </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
+          <div class="component--section">
+            <h2>How did we do?</h2>
+            <p>Please let us know how we did with your support request. All feedback is appreciated
+              to help us improve our offering!</p>
+          </div>
 
-  1 2 3 4 5
+          <div class="component--section">
+            <div class="ratings flex-center">
+              <div data-rating="1" class="ratings--icon circle flex-center">1</div>
+              <div data-rating="2" class="ratings--icon circle flex-center">2</div>
+              <div data-rating="3" class="ratings--icon circle flex-center">3</div>
+              <div data-rating="4" class="ratings--icon circle flex-center">4</div>
+              <div data-rating="5" class="ratings--icon circle flex-center">5</div>
+            </div>
+          </div>
 
-  Submit
+          <div class="component--section flex-center">
+            <button>Submit</button>
+          </div>
+          <!-- Rating state end -->
+        </div>
+      </div>
 
-  <!-- Rating state end -->
+    </main>
 
-  <!-- Thank you state start -->
+    <div id="thankyou-state">
+      <!-- Thank you state start -->
+      <div class="component--section">
+        <img class="thankyou-state-image" src="./images/illustration-thank-you.svg" alt="payment confirmation">
+      </div>
 
-  You selected
-  <!-- Add rating here --> out of 5
+      <div class="component--section">
+        <div class="rating-display">
+          You selected <span id="user-rating"></span> out of 5
+        </div>
+      </div>
 
-  Thank you!
+      <div class="component--section">
+        <h2>Thank you!</h2>
 
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don't hesitate to get in touch!
+        </p>
+      </div>
+      <!-- Thank you state end -->
+    </div>
 
-  <!-- Thank you state end -->
 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/mchlol" target="_blank">mchlol</a>.
+      </div>
+    </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
