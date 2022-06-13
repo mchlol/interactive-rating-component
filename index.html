@@ -20,10 +20,11 @@
   <div class="page-container">
     <main class="content-wrap">
 
-      <div class="component container">
 
-        <div id="rating-state">
-          <!-- Rating state start -->
+
+      <!-- Rating state start -->
+      <div id="rating-state">
+        <div class="component container">
           <div class="component--section">
             <div class="icon-wrap circle flex-center">
               <img src="./images/icon-star.svg" alt="orange star">
@@ -37,55 +38,62 @@
           </div>
 
           <div class="component--section">
-            <div class="ratings flex-center">
-              <div data-rating="1" class="ratings--icon circle flex-center">1</div>
-              <div data-rating="2" class="ratings--icon circle flex-center">2</div>
-              <div data-rating="3" class="ratings--icon circle flex-center">3</div>
-              <div data-rating="4" class="ratings--icon circle flex-center">4</div>
-              <div data-rating="5" class="ratings--icon circle flex-center">5</div>
+            <div class="ratings flex-center space-between">
+              <button data-rating="1" class="ratings--btn circle flex-center">1</button>
+              <button data-rating="2" class="ratings--btn circle flex-center">2</button>
+              <button data-rating="3" class="ratings--btn circle flex-center">3</button>
+              <button data-rating="4" class="ratings--btn circle flex-center">4</button>
+              <button data-rating="5" class="ratings--btn circle flex-center">5</button>
             </div>
           </div>
 
           <div class="component--section flex-center">
-            <button>Submit</button>
+            <button id="submit-btn">Submit</button>
           </div>
-          <!-- Rating state end -->
         </div>
       </div>
+      <!-- Rating state end -->
 
-    </main>
-
-    <div id="thankyou-state">
       <!-- Thank you state start -->
-      <div class="component--section">
-        <img class="thankyou-state-image" src="./images/illustration-thank-you.svg" alt="payment confirmation">
-      </div>
+      <div id="thankyou-state">
+        <div class="component container">
+          <div class="component--section flex-center">
+            <img class="thankyou-state-image" src="./images/illustration-thank-you.svg" alt="payment confirmation">
+          </div>
 
-      <div class="component--section">
-        <div class="rating-display">
-          You selected <span id="user-rating"></span> out of 5
+          <div class="component--section flex-center">
+            <div class="rating-div text-align-center">
+              You selected <span id="rating-span"></span> out of 5
+            </div>
+          </div>
+
+          <div class="component--section flex-center flex-column text-align-center">
+            <h2>Thank you!</h2>
+
+            <p>
+              We appreciate you taking the time to give a rating. If you ever need more support,
+              don't hesitate to get in touch!
+            </p>
+          </div>
+
         </div>
-      </div>
-
-      <div class="component--section">
-        <h2>Thank you!</h2>
-
-        <p>
-          We appreciate you taking the time to give a rating. If you ever need more support,
-          don't hesitate to get in touch!
-        </p>
       </div>
       <!-- Thank you state end -->
+
+
+  </div>
+
+  </main>
+
+
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/mchlol" target="_blank">mchlol</a>.
     </div>
-
-
-
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/mchlol" target="_blank">mchlol</a>.
-      </div>
-    </footer>
+  </footer>
   </div>
   <script src="script.js"></script>
 </body>
